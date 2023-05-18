@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8/" />
+    <title>Table.</title>
+    <style>
+      .important {
+        color: red;
+        font-weight: bold;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+
+      form {
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Zoo Keeper Application Form</h1>
+      <p>
+        Pleace complete the form.Mandatory fields are marked with a
+        <span class="important">*</span>
+      </p>
+      <fieldset>
+        <label>Contact Details</label>
+        <br />
+        <br />
+        <label for="name"> Name<span class="important">*</span> </label>
+        <input
+          type="text"
+          id="name"
+          required="required"
+          minlength="3"
+          maxlength="25"
+        />
+        <br />
+        <br />
+        <label for="telephone"> Telephone </label>
+        <input type="text" id="telephone" min="10" max="10" />
+        <br />
+        <br />
+
+        <label for="email"> E-mail<span class="important">*</span> </label>
+        <input type="email" id="email" />
+      </fieldset>
+
+      <fieldset>
+        <label>Personal Information</label>
+        <br />
+        <br />
+
+        <label for="age">Age <span class="important">*</span> </label>
+        <input type="text" id="age" />
+        <br />
+        <br />
+        <label>Gender </label>
+
+        <select name="" id="">
+          <option disabled>Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <br />
+        <br />
+        <label for="zoo-keeper" style="display: inline-block; width: 170px"
+          >When did you first know you wanted to be a zoo-keeper?</label
+        >
+        <textarea
+          name="zoo-keeper"
+          id="zoo-keeper"
+          cols="20"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="">Pick Your Favorite Animal</label>
+        <br />
+        <br />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+        <label for="zebra">Zebra</label>
+        <input type="checkbox" id="zebra" />
+      </fieldset>
+      <br />
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>
